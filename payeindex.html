@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paye calculator</title>
+    <link rel="stylesheet" href="net.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="col-sm-4">
+            <form class="margin-top-md">
+                <div class="form-group">
+    
+                    <h3><strong>Calculate</strong></h3>
+                    <input class="input-lg form-control margin-top-md" id="pay-gross" type="number" placeholder="Gross Pay" />
+    
+                    <hr />
+    
+                    <h4><strong>PAYE Calculation</strong></h4>
+                    <input class="form-control margin-top-md" id="insurance-relief" type="number" placeholder="Insurance Relief" />
+    
+                    <hr />
+    
+                    <h4><strong>Net Pay Calculation</strong></h4>
+                    <input class="form-control margin-top-md" id="non-cash-benefits" type="number" placeholder="Non-cash Benefits" />
+                    <input class="form-control margin-top-md" id="pension-contribution" type="number" placeholder="Pension Contributions" />
+                    <input class="form-control margin-top-md" id="deductions-other" type="number" placeholder="Other Allowable Deductions" />
+    
+                    <hr />
+    
+                    <h4><strong>Old NSSF</strong></h4>
+                    <p><label><input class="" type="checkbox" id="old-nssf-rates" /> Use old NSSF Rates</label></p>
+                </div>
+    
+                <!-- Response -->
+                <p id="response"></p>
+    
+                <button type="submit" class="btn btn-primary btn-lg margin-top-md" id="calculate">Calculate</button>
+            </form>
+        </div>
+    
+        <div class="col-sm-4 col-sm-offset-1 margin-top-md">
+            <h4><strong>Gross Pay</strong><span id="result-pay-gross"></span></h4>
+            <hr />
+    
+            <h4><strong>Taxable Pay</strong><span id="result-pay-taxable"></span></h4>
+            <hr />
+    
+            <h4><strong>NHIF</strong><span id="result-nhif"></span></h4>
+            <hr />
+    
+            <h4><strong>NSSF</strong><span id="result-nssf"></span></h4>
+    
+            <hr />
+    
+            <h4><strong>PAYE</strong><span id="result-paye"></span></h4>
+            <hr />
+    
+            <h4><strong>Net Pay</strong><span id="result-pay-net"></span></h4>
+        </div>
+    </div>
+    
+</body>
+<script src="net salary.js"></script>
+</html>
