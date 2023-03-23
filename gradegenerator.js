@@ -17,3 +17,5 @@ else if (score <40){
 }
 }
 console.log(totalGrade(69))
+// the if else statement is used to check the students marks and grade them according to how they perform.
+// console.log is used to print out the student grades for each student according to the marks acquired.
